@@ -4,13 +4,14 @@
     <head>
       <!-- SCROLLS -->
       <!-- load bootstrap and fontawesome via CDN -->
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css" />
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
-
+      <link rel="stylesheet" href="style.css"/>
       <!-- SPELLS -->
       <!-- load angular and angular route via CDN -->
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
-      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular-route.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-route.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-animate.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="script.js"></script>
@@ -22,13 +23,13 @@
             <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="/">My Portfolio</a>
+                    <a class="navbar-brand" href="#/">My Portfolio</a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
                     <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#projects"><i class="fa fa-kog"></i> Projects
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#projects"><i class="fa fa-gears"></i> Projects
                       <span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a href="#lambda-engine">Lambda Engine</a></li>
@@ -42,7 +43,7 @@
                         <li><a href="#jchrome">JChrome</a></li>
                       </ul>
                     </li>
-                    <li><a href="#about"><i class="fa fa-shield"></i> About</a></li>
+                    <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
                     <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
                 </ul>
             </div>
@@ -53,7 +54,7 @@
         <div id="main">
             <!-- angular templating -->
             <!-- this is where content will be injected -->
-            <div ng-view></div>
+            <div ng-view class="slide"></div>
         </div>
 
     </body>
