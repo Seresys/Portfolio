@@ -7,7 +7,6 @@ var app        = express()                 // define our app using express
 var port = process.env.PORT || 3000        // set our port
 
 //app.set('view engine', 'pug')
-app.use('/img', express.static(__dirname + '/img'))
 app.use(express.static(__dirname))
 app.get('/', function(req, res){
 	res.render('index')

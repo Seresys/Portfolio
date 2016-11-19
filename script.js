@@ -84,9 +84,9 @@ myApp.controller('contactController', function($scope) {
 myApp.controller('projectController', function($scope) {
     $scope.message = 'Here is a list of my last achievements :)';
     $scope.projects = [
-      { "name": 'Lambda Engine', "image": 'lambda-engine.png', "link": "lambda-engine"},
-      { "name": 'Eclipse', "image": 'lambda-engine.png', "link": "eclipse"},
-      { "name": 'The Village', "image": 'lambda-engine.png', "link": "the-village"}
+      { "name": 'Lambda Engine', "image": 'lambda-engine.PNG', "link": "lambda-engine"},
+      { "name": 'Eclipse', "image": 'lambda-engine.PNG', "link": "eclipse"},
+      { "name": 'The Village', "image": 'lambda-engine.PNG', "link": "the-village"}
     ];
 });
 
