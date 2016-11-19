@@ -5,13 +5,14 @@
       <!-- SCROLLS -->
       <!-- load bootstrap and fontawesome via CDN -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css" />
-      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.0/css/font-awesome.css" />
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.css" />
       <link rel="stylesheet" href="style.css"/>
       <!-- SPELLS -->
       <!-- load angular and angular route via CDN -->
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-route.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-animate.min.js"></script>
+      <script src="bower_components/angular-translate/angular-translate.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="script.js"></script>
@@ -23,28 +24,28 @@
             <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#/">My Portfolio</a>
+                    <a class="navbar-brand" href="#/">{{ 'home-title' | translate }}</a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#/"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a href="#/"><i class="fa fa-home"></i> {{ 'home' | translate }}</a></li>
+                    <li><a href="#resume"><i class="fa fa-user"></i> {{ 'resume' | translate }}</a></li>
                     <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#projects"><i class="fa fa-gears"></i> Projects
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#projects"><i class="fa fa-gears"></i> {{ 'projects' | translate }}
                       <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="#lambda-engine">Lambda Engine</a></li>
-                        <li><a href="#eclipse">Eclipse</a></li>
-                        <li><a href="#dynasty">Dynasty</a></li>
-                        <li><a href="#tsp-solver">TSP Solver</a></li>
-                        <li><a href="#pez-audio-player">P.E.Z Audio Player</a></li>
-                        <li><a href="#constellation-series">Constellation Series</a></li>
-                        <li><a href="#the-village">The Village</a></li>
-                        <li><a href="#hire">Hire</a></li>
-                        <li><a href="#jchrome">JChrome</a></li>
+                        <li><a href="#lambda-engine"><i class="fa fa-magnet"></i> Lambda Engine</a></li>
+                        <li><a href="#eclipse"><i class="fa fa-sun-o"></i> Eclipse</a></li>
+                        <li><a href="#dynasty"><i class="fa fa-university"></i> Dynasty</a></li>
+                        <li><a href="#tsp-solver"><i class="fa fa-map"></i> TSP Solver</a></li>
+                        <li><a href="#pez-audio-player"><i class="fa fa-music"></i> P.E.Z Audio Player</a></li>
+                        <li><a href="#constellation-series"><i class="fa fa-film"></i> Constellation Series</a></li>
+                        <li><a href="#the-village"><i class="fa fa-home"></i> The Village</a></li>
+                        <li><a href="#hire"><i class="fa fa-users"></i> Hire</a></li>
+                        <li><a href="#jchrome"><i class="fa fa-chrome"></i> JChrome</a></li>
                       </ul>
                     </li>
-                    <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
-                    <li><a href="#contact"><i class="fa fa-comment"></i> Contact</a></li>
+                    <li><a href="#contact"><i class="fa fa-comment"></i> {{ 'contact' | translate }}</a></li>
                 </ul>
             </div>
             </nav>

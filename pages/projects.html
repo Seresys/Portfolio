@@ -1,6 +1,19 @@
 <!-- contact.html -->
-    <div class="jumbotron text-center">
-        <h1>Projects Page</h1>
-
-        <p>{{ message }}</p>
-    </div>
+<div class="jumbotron text-center">
+  <h1>Projects Page</h1>
+    <p>{{ message }}</p>
+</div>
+<div class="col-md-12 col-sm-12">
+ <div class="row">
+  <div class="col-md-4" ng-repeat="project in projects">
+   <div class="thumbnail">
+    <a href="#{{project.link}}">
+      <img ng-src="img/{{project.image}}" alt="project.name" style="width:100%">
+      <div class="caption">
+        <p class="text-center" ng-bind="project.name"></p>
+      </div>
+    </a>
+   </div>
+  </div>
+ </div>
+</div>
