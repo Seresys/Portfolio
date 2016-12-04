@@ -1,6 +1,6 @@
 <!-- index.html -->
     <!DOCTYPE html>
-    <html ng-app="myApp">
+    <html ng-app="portfolio">
     <head>
       <!-- SCROLLS -->
       <!-- load bootstrap and fontawesome via CDN -->
@@ -12,7 +12,6 @@
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-route.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.0/angular-animate.min.js"></script>
-      <script src="bower_components/angular-translate/angular-translate.min.js"></script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
       <script src="script.js"></script>
@@ -24,28 +23,20 @@
             <nav class="navbar navbar-default">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#/">{{ 'home-title' | translate }}</a>
+                    <a class="navbar-brand" href="#/">{{ data.menu.brand.label }}</a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#/"><i class="fa fa-home"></i> {{ 'home' | translate }}</a></li>
-                    <li><a href="#resume"><i class="fa fa-user"></i> {{ 'resume' | translate }}</a></li>
+                    <li><a href="#/"><i ng-class="data.menu.home.icon"></i> {{ data.menu.home.label }}</a></li>
+                    <li><a href="#resume"><i ng-class="data.menu.resume.icon"></i> {{ data.menu.resume.label }}</a></li>
                     <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#projects"><i class="fa fa-gears"></i> {{ 'projects' | translate }}
+                      <a class="dropdown-toggle" data-toggle="dropdown" href="#projects"><i ng-class="data.menu.projects.icon"></i> {{ data.menu.projects.label }}
                       <span class="caret"></span></a>
                       <ul class="dropdown-menu">
-                        <li><a href="#lambda-engine"><i class="fa fa-magnet"></i> Lambda Engine</a></li>
-                        <li><a href="#eclipse"><i class="fa fa-sun-o"></i> Eclipse</a></li>
-                        <li><a href="#dynasty"><i class="fa fa-university"></i> Dynasty</a></li>
-                        <li><a href="#tsp-solver"><i class="fa fa-map"></i> TSP Solver</a></li>
-                        <li><a href="#pez-audio-player"><i class="fa fa-music"></i> P.E.Z Audio Player</a></li>
-                        <li><a href="#constellation-series"><i class="fa fa-film"></i> Constellation Series</a></li>
-                        <li><a href="#the-village"><i class="fa fa-home"></i> The Village</a></li>
-                        <li><a href="#hire"><i class="fa fa-users"></i> Hire</a></li>
-                        <li><a href="#jchrome"><i class="fa fa-chrome"></i> JChrome</a></li>
+                        <li ng-repeat="p in data.projects.list track by $index"><a ng-click="SetProject($index)" ng-href="{{p.link}}"><i ng-class="p.icon"></i> {{ p.title }}</a></li>
                       </ul>
                     </li>
-                    <li><a href="#contact"><i class="fa fa-comment"></i> {{ 'contact' | translate }}</a></li>
+                    <li><a href="#contact"><i class="data.menu.contact.icon"></i> {{ data.menu.contact.label }}</a></li>
                 </ul>
             </div>
             </nav>

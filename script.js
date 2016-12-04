@@ -1,95 +1,69 @@
 // script.js
 
-// create the module and name it scotchApp
-var myApp = angular.module('myApp', ['ngRoute', 'ngAnimate', 'pascalprecht.translate']);
+// create the module and name it
+var portfolio = angular.module('portfolio', ['ngRoute', 'ngAnimate']);
 
 // configure our routes
-myApp.config(function($routeProvider) {
+portfolio.config(function($routeProvider) {
     $routeProvider
         .when('/', {
-            templateUrl : 'pages/home.html',
-            controller  : 'mainController'
+          templateUrl : 'pages/home.html'
         })
         .when('/resume', {
-            templateUrl : 'pages/resume.html',
-            controller  : 'resumeController'
+          templateUrl : 'pages/resume.html'
         })
         .when('/contact', {
-            templateUrl : 'pages/contact.html',
-            controller  : 'contactController'
+          templateUrl : 'pages/contact.html'
         })
         .when('/projects', {
-          templateUrl: 'pages/projects.html',
-          controller: 'projectController'
+          templateUrl: 'pages/projects.html'
         })
         .when('/lambda-engine', {
-          templateUrl: 'pages/projects/lambda-engine.html',
-          controller: 'projectDetailController'
+          templateUrl: 'pages/projects/lambda-engine.html'
         })
         .when('/the-village', {
-          templateUrl: 'pages/projects/the-village.html',
-          controller: 'projectDetailController'
+          templateUrl: 'pages/projects/the-village.html'
+        })
+        .when('/dynasty', {
+          templateUrl: 'pages/projects/dynasty.html'
+        })
+        .when('/pez-audio-player', {
+          templateUrl: 'pages/projects/pez-audio-player.html'
+        })
+        .when('/constellation-series', {
+          templateUrl: 'pages/projects/constellation-series.html'
         })
         .when('/eclipse', {
-          templateUrl: 'pages/projects/eclipse.html',
-          controller: 'projectDetailController'
+          templateUrl: 'pages/projects/eclipse.html'
+        })
+        .when('/hire', {
+          templateUrl: 'pages/projects/hire.html'
+        })
+        .when('/jchrome', {
+          templateUrl: 'pages/projects/jchrome.html'
+        })
+        .when('/tsp-solver', {
+          templateUrl: 'pages/projects/tsp-solver.html'
         })
         .otherwise({
           redirectTo: '/'
         });
 });
-
-myApp.config(['$translateProvider', function ($translateProvider) {
-  $translateProvider.useSanitizeValueStrategy('escape');
-  $translateProvider.translations('en', {
-    'home-title': 'My Portfolio',
-    'home' : 'Home',
-    'resume': 'Resume',
-    'projects': 'Projects',
-    'contact': 'Contact'
-  });
-
-  $translateProvider.translations('fr', {
-    'home-title': 'Mon Portfolio',
-    'home' : 'Accueil',
-    'resume': 'Curriculum-Vitae',
-    'projects': 'Réalisations',
-    'contact': 'Contact'
-  });
-
-  $translateProvider.determinePreferredLanguage(function () {
-    var language = window.navigator.userLanguage || window.navigator.language;
-    if(language == 'fr' || language == 'en')
-      return language;
-    else {
-      return 'en';
-    }
-  });
-}]);
-
 // create the controller and inject Angular's $scope
-myApp.controller('mainController', function($scope) {
-    // create a message to display in our view
-    $scope.message = 'Everyone come and enjoy your journey !';
-});
-
-myApp.controller('resumeController', function($scope) {
-    $scope.message = 'Look at my resume.';
-});
-
-myApp.controller('contactController', function($scope) {
-    $scope.message = 'Contact us! JK. This is just a demo.';
-});
-
-myApp.controller('projectController', function($scope) {
-    $scope.message = 'Here is a list of my last achievements :)';
-    $scope.projects = [
-      { "name": 'Lambda Engine', "image": 'lambda-engine.PNG', "link": "lambda-engine"},
-      { "name": 'Eclipse', "image": 'lambda-engine.PNG', "link": "eclipse"},
-      { "name": 'The Village', "image": 'lambda-engine.PNG', "link": "the-village"}
-    ];
-});
-
-myApp.controller('projectDetailController', function($scope) {
-    $scope.message = 'This should look like the detail of a project';
+portfolio.controller('mainController', function($scope, $http) {
+    var language = window.navigator.userLanguage || window.navigator.language;
+    if(language == 'fr')
+      $http.get('i18n/fr.json')
+       .then(function(res){
+          $scope.data = res.data;
+      });
+    else {
+      $http.get('i18n/en.json')
+       .then(function(res){
+          $scope.data = res.data;
+      });
+    }
+    $scope.SetProject = function(id){
+      $scope.project = $scope.data.projects.list[id];
+    }
 });

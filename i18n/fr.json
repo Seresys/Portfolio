@@ -1,0 +1,121 @@
+{
+  "menu": {
+    "brand": {
+      "label": "Mon Portfolio"
+    },
+    "home": {
+      "label": "Accueil",
+      "icon": "fa fa-home"
+    },
+    "resume": {
+      "label": "Curriculum-Vitae",
+      "icon": "fa fa-user"
+    },
+    "projects": {
+      "label": "Réalisations",
+      "icon": "fa fa-gears"
+    },
+    "contact": {
+      "label": "Contact",
+      "icon": "fa fa-comment"
+    }
+  },
+  "home": {
+    "title": "Accueil",
+    "subtitle": "Bienvenue sur mon portfolio, vous trouverez ici des informations sur mon parcours et mes dernières réalisations."
+  },
+  "resume": {
+    "title": "Curriculum-Vitae",
+    "subtitle": "Développeur logiciel",
+    "info": {
+      "title": "Informations personelles"
+    },
+    "pro": {
+      "title": "Expérience professionelle"
+    },
+    "education": {
+      "title": "Parcours scolaire"
+    },
+    "achievements": {
+      "title": "Dernières réalisations"
+    },
+    "hobbies": {
+      "title": "Loisirs"
+    }
+  },
+  "projects" : {
+    "title": "Dernières réalisations",
+    "subtitle": "Vous trouverez ici un détail de mes derniers projets.",
+    "list":
+    [
+      {
+        "icon": "fa fa-magnet",
+        "title": "Lambda Engine",
+        "subtitle": "Un moteur de jeu en pur Javascript",
+        "link": "#lambda-engine",
+        "picture": "lambda-engine-1.PNG",
+        "content": "Lambda Engine est un moteur de jeu réalisé dans le cadre du cours de conception de jeux vidéos à l'UQAC Chicoutimi."
+      },
+      {
+        "icon": "fa fa-sun-o",
+        "title": "Eclipse",
+        "subtitle": "Un jeu vidéo de type Puzzle/Plateforme exploitant la dualité ombre et lumière. Réalisé sur Unity.",
+        "link": "#eclipse",
+        "picture": "pez-audio-player-1.PNG"
+      },
+      {
+        "icon": "fa fa-university",
+        "title": "Dynasty",
+        "subtitle": "Un jeu de stratégie en temps réel réalisé en C#.",
+        "link": "#dynasty",
+        "picture": "pez-audio-player-1.PNG"
+      },
+      {
+        "icon": "fa fa-map",
+        "title": "TSP Solver",
+        "subtitle": "Un application JavaScript utilisant WebSocket pour communiquer avec un serveur en C++ calculant le plus court chemin entre des points géographiques à l'aide de l'algorithme de Little.",
+        "link": "#tsp-solver",
+        "picture": "pez-audio-player-1.PNG"
+      },
+      {
+        "icon": "fa fa-music",
+        "title": "P.E.Z Audio Player",
+        "subtitle": "Une application Android 5.0+ faisant office de librairie musicale.",
+        "link": "#pez-audio-player",
+        "picture": "pez-audio-player-1.PNG"
+      },
+      {
+        "icon": "fa fa-film",
+        "title": "Constellation Series",
+        "subtitle": "Une application AngularJS permettant de garder le fil de ses séries suivies, connectée avec une solution domotique à travers un serveur en C#.",
+        "link": "#constellation-series",
+        "picture": "pez-audio-player-1.PNG"
+      },
+      {
+        "icon": "fa fa-home",
+        "title": "The Village",
+        "subtitle": "Une application Androïd d'une alternative au jeu Mafia. Connectée avec une base MongoDB à travers un WebService REST. Chat en ligne avec Socket.IO.",
+        "link": "#the-village",
+        "picture": "pez-audio-player-1.PNG"
+      },
+      {
+        "icon": "fa fa-users",
+        "title": "Hire",
+        "subtitle": "Une application MEAN (Mongo Express Angular Node) designée afin de faciliter le travail du services relation humaine d'une entreprise.",
+        "link": "#hire",
+        "picture": "pez-audio-player-1.PNG"
+      },
+      {
+        "icon": "fa fa-chrome",
+        "title": "JChrome",
+        "subtitle": "Une implémentation Java d'un navigateur Web utilisant Rhino et JSoup.",
+        "link": "#jchrome",
+        "picture": "pez-audio-player-1.PNG"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Besoin d'informations supplémentaires ? Envoyez moi un message !"
+  }
+}

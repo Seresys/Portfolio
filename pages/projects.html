@@ -1,16 +1,16 @@
 <!-- contact.html -->
 <div class="jumbotron text-center">
-  <h1>Projects Page</h1>
-    <p>{{ message }}</p>
+  <h1>{{ data.projects.title }}</h1>
+  <p>{{ data.projects.subtitle }}</p>
 </div>
 <div class="col-md-12 col-sm-12">
  <div class="row">
-  <div class="col-md-4" ng-repeat="project in projects">
+  <div class="col-md-4" ng-repeat="p in data.projects.list track by $index">
    <div class="thumbnail">
-    <a href="#{{project.link}}">
-      <img ng-src="img/{{project.image}}" alt="project.name" style="width:100%">
+    <a ng-href="{{p.link}}" ng-click="SetProject($index)">
+      <img class="img-responsive" ng-src="img/{{p.picture}}" alt="{{p.picture}}" style="max-width:100%; height:200px;">
       <div class="caption">
-        <p class="text-center" ng-bind="project.name"></p>
+        <p class="text-center" ng-bind="p.title"></p>
       </div>
     </a>
    </div>

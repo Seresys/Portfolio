@@ -1,12 +1,10 @@
 {
-  "name": "lambda_engine",
+  "name": "Portfolio",
   "version": "1.0.0",
-  "description": "Quick game engine in JS",
+  "description": "Simple angular portfolio",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.14.0",
-    "nodemon": "^1.10.2",
-    "pug": "^2.0.0-beta6"
+    "express": "^4.14.0"
   },
   "scripts": {
     "test": "node server.js",
@@ -14,19 +12,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Eldow/LambdaEngine.git"
+    "url": "git+https://github.com/Eldow/Portfolio.git"
   },
   "keywords": [
-    "game",
-    "engine",
+    "portfolio",
+    "angular",
     "javascript",
-    "canvas",
-    "shape"
+    "resume",
+    "projects"
   ],
-  "author": "francois decan - marine ripon",
+  "author": "francois decan",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Eldow/LambdaEngine/issues"
+    "url": "https://github.com/Eldow/Portfolio/issues"
   },
-  "homepage": "https://github.com/Eldow/LambdaEngine#readme"
+  "homepage": "https://github.com/Eldow/Portfolio#readme"
 }
