@@ -13,7 +13,8 @@ Simply clone and run `npm install` && `node server.js`
 
 ## Live demo
 Live Demo hosted at :
-https://portfolio-franc.herokuapp.com
+https://fdecan.herokuapp.com/
+(directly pipelined to this repo)
 
 ## Author
 François Decan
