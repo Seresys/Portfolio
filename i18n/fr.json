@@ -35,7 +35,19 @@
     "subtitle": "Développeur logiciel",
     "download": "Téléchargez mon CV au format PDF",
     "info": {
-      "title": "Informations personnelles"
+      "title": "Informations personnelles",
+      "birthdate": {
+        "key": "Date de naissance",
+        "value": "11/05/1994"
+      },
+      "mail": {
+        "key": "E-mail",
+        "value": "fdecan.pro@gmail.com"
+      },
+      "address": {
+        "key": "Adresse",
+        "value": "555, Boulevard de l’Université, Chicoutimi, QC, CANADA"
+      }
     },
     "pro": {
       "title": "Expérience professionnelle",
@@ -66,7 +78,7 @@
       },
       {
         "brand": "ISEN",
-        "label": "Institut supérieur de l'électronique et du numérique de Lille",
+        "label": "Institut Supérieur de l'Électronique et du Numérique de Lille",
         "localisation": "Lille, Nord, France",
         "logo": "isen-logo.png",
         "period": "2015 - 2016",
@@ -113,7 +125,7 @@
       "technologies": [
         {
           "category": "Software",
-          "list": ["C++", "C#", "Java", ".NET"]
+          "list": ["C++", "C#", "Java"]
         },
         {
           "category": "Scripting",
@@ -153,15 +165,15 @@
       "list": [
         {
           "name": "Clarinette",
-          "picture": ""
+          "picture": "clarinet.png"
         },
         {
           "name": "Piano",
-          "picture": ""
+          "picture": "piano.png"
         },
         {
           "name": "Ping-pong",
-          "picture": ""
+          "picture": "ping-pong.png"
         }
       ]
     }

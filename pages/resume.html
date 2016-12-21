@@ -8,7 +8,20 @@
     <div class="panel-heading">
       <h2> <i class="fa fa-user"></i> {{ data.resume.info.title }} <h2>
     </div>
-    <div class="panel-body"> {{ data.resume.info.content }}</div>
+    <div class="panel-body">
+      <div class="row">
+        <div class="col-md-2"><i class="fa fa-birthday-cake"></i> {{ data.resume.info.birthdate.key }} </div>
+        <div class="col-md-10"> {{ data.resume.info.birthdate.value }} </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"><i class="fa fa-envelope"></i> {{ data.resume.info.mail.key }} </div>
+        <div class="col-md-10"> {{ data.resume.info.mail.value }} </div>
+      </div>
+      <div class="row">
+        <div class="col-md-2"><i class="fa fa-map-marker"></i> {{ data.resume.info.address.key }} </div>
+        <div class="col-md-10"> {{ data.resume.info.address.value }} </div>
+      </div>
+    </div>
   </div>
 
   <div class="panel panel-default">
@@ -87,7 +100,8 @@
     <div class="panel-body">
       <div class="row">
         <div class="col-md-4" ng-repeat="hobby in data.resume.hobbies.list">
-          <h3>{{hobby.name}}</h3>
+          <h3 class="text-center">{{hobby.name}}</h3>
+          <img class="img-responsive center-block" ng-src="img/{{hobby.picture}}">
         </div>
       </div>
     </div>
