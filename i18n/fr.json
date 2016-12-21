@@ -181,6 +181,8 @@
   "projects" : {
     "title": "Dernières réalisations",
     "subtitle": "Voici une liste de mes derniers projets.",
+    "objective": "Objectif",
+    "how": "Comment ça marche ? ",
     "list":
     [
       {
@@ -197,7 +199,7 @@
       {
         "icon": "fa fa-sun-o",
         "title": "Eclipse",
-        "subtitle": "Un jeu vidéo de type Puzzle/Plateforme exploitant la dualité ombre et lumière. Réalisé avec Unity.",
+        "subtitle": "Un jeu vidéo de type Puzzle/Plateforme exploitant la dualité ombre et lumière. Réalisée avec Unity.",
         "link": "#eclipse",
         "picture": "eclipse-1.png",
         "tags": ["c#", "unity"],
