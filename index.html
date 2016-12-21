@@ -2,7 +2,9 @@
     <!DOCTYPE html>
     <html ng-app="portfolio">
     <head>
-      <!-- SCROLLS -->
+      <link rel="icon"
+      type="image/png"
+      href="img/lambdoid-logo.PNG">
       <!-- load bootstrap and fontawesome via CDN -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css" />
       <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.css" />
@@ -20,23 +22,19 @@
 
         <!-- HEADER AND NAVBAR -->
         <header>
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
-                    <a class="navbar-brand" href="#/">{{ data.menu.brand.label }}</a>
+                    <a class="navbar-brand" href="#/"><i class="fa fa-asterisk"></i>  {{ data.menu.brand.label }}</a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#/"><i ng-class="data.menu.home.icon"></i> {{ data.menu.home.label }}</a></li>
                     <li><a href="#resume"><i ng-class="data.menu.resume.icon"></i> {{ data.menu.resume.label }}</a></li>
-                    <li class="dropdown">
-                      <a class="dropdown-toggle" data-toggle="dropdown" href="#projects"><i ng-class="data.menu.projects.icon"></i> {{ data.menu.projects.label }}
-                      <span class="caret"></span></a>
-                      <ul class="dropdown-menu">
-                        <li ng-repeat="p in data.projects.list track by $index"><a ng-click="SetProject($index)" ng-href="{{p.link}}"><i ng-class="p.icon"></i> {{ p.title }}</a></li>
-                      </ul>
-                    </li>
-                    <li><a href="#contact"><i class="data.menu.contact.icon"></i> {{ data.menu.contact.label }}</a></li>
+                    <li><a href="#projects"><i ng-class="data.menu.projects.icon"></i> {{ data.menu.projects.label }}</a></li>
+                    <li><a href="#contact"><i ng-class="data.menu.contact.icon"></i> {{ data.menu.contact.label }}</a></li>
+                    <li><a ng-href="{{data.menu.github}}"><i class="fa fa-github"></i> Github </a></li>
+                    <li><a ng-href="{{data.menu.linkedin}}"><i class="fa fa-linkedin"></i> LinkedIn </a></li>
                 </ul>
             </div>
             </nav>
@@ -48,6 +46,5 @@
             <!-- this is where content will be injected -->
             <div ng-view class="fade"></div>
         </div>
-
     </body>
     </html>

@@ -1,13 +1,21 @@
-<!-- home.html -->
-    <div class="jumbotron text-center">
-        <h1> {{ data.home.title }}</h1>
-
-        <p>{{ data.home.subtitle }}</p>
-    </div>
-
-    <h1 class ="text-center">
-Mon Portfolio est actuellement en cours de refonte complète, et sera disponible pleinement à la fin du mois de Décembre après mes examens et projets.
-    </h1>
-    <h1 class="text-center">
-      Merci de votre compréhension.
-    </h1>
+<div class="jumbotron text-center">
+    <h1>{{ data.home.title }}</h1>
+    <p>{{ data.home.subtitle }}</p>
+</div>
+<div class="container">
+  <div class="row">
+    <div class="col-md-12"><h4 class="text-center">{{data.home.line1}}</h4></div>
+  </div>
+  <div class="row">
+    <div class="col-md-12"><h4 class="text-center">{{data.home.line2}}</h4></div>
+  </div>
+  <div class="row">
+    <div class="col-md-12"><a ng-href="data.home.friend-link"><p class="text-center">{{ data.home.friend}}</p></a></div>
+  </div>
+  <div class="row">
+    <img class="img-responsive center-block" src="img/lambdoid-logo.PNG"/>
+  </div>
+  <div class="row">
+    <div class="col-md-12"><p class="text-center text-info">Lambdoid Studios</p></div>
+  </div>
+</div>

@@ -1,5 +1,40 @@
-<!-- contact.html -->
-    <div class="jumbotron text-center">
-      <h1>{{ data.contact.title }}</h1>
-      <p>{{ data.contact.subtitle }}</p>
+<div class="jumbotron text-center">
+  <h1>{{ data.contact.title }}</h1>
+  <p>{{ data.contact.subtitle }}</p>
+  <p class="text-info">{{ data.contact.info }}</p>
+</div>
+<div class="container">
+  <form name="mailForm" novalidate>
+    <div class="form-group">
+      <div class="row">
+        <h3>{{ data.contact.object }}</h3>
+      </div>
+      <div class="row">
+        <input class="col-md-12 col-sm-12 col-xs-12" ng-model="message.subject" name="object" id="object" type="text" required/>
+      </div>
     </div>
+    <div class="form-group">
+      <div class="row">
+        <h3>{{ data.contact.content }}</h3>
+      </div>
+      <div class="row">
+        <textarea class="col-md-12 col-sm-12 col-xs-12" ng-model="message.body" name="content" id="content" rows="5" required></textarea>
+      </div>
+    </div>
+    <div class="form-group">
+      <div class="row" ng-if="(mailForm.content.$valid && mailForm.object.$valid)">
+        <button class="btn btn-primary col-md-12 col-sm-12 col-xs-12" ng-click="SendMessage()"> <i class="fa fa-send"></i> {{data.contact.send}}</button>
+      </div>
+    </div>
+    <div class="form-group" ng-if="success && (!mailForm.content.$valid && !mailForm.object.$valid)">
+      <div class="row">
+        <p class="text-success">{{data.contact.success}}</p>
+      </div>
+    </div>
+    <div class="form-group" ng-if="error && (!mailForm.content.$valid && !mailForm.object.$valid)">
+      <div class="row">
+        <p class="text-error">{{data.contact.error}}</p>
+      </div>
+    </div>
+  </form>
+</div>

@@ -18,104 +18,260 @@
     "contact": {
       "label": "Contact",
       "icon": "fa fa-comment"
-    }
+    },
+    "linkedin": "https://ca.linkedin.com/in/francois-decan-0a2832b3",
+    "github": "https://github.com/Eldow"
   },
   "home": {
     "title": "Accueil",
-    "subtitle": "Bienvenue sur mon portfolio, vous trouverez ici des informations sur mon parcours et mes dernières réalisations."
+    "subtitle": "Bienvenue sur mon portfolio, vous trouverez ici des informations sur mon parcours et mes dernières réalisations.",
+    "line1": "Passionné par les nouvelles technologies et le jeu-vidéo, j'aime développer des applications variées pendant mon temps libre.",
+    "line2" : "Depuis 2016, j'ai créé avec une amie Lambdoid Studios, une organisation indépendante de production d'applications.",
+    "friend-link": "https://mripon.herokuapp.com",
+    "friend": "Lien vers son portfolio"
   },
   "resume": {
     "title": "Curriculum-Vitae",
     "subtitle": "Développeur logiciel",
+    "download": "Téléchargez mon CV au format PDF",
     "info": {
-      "title": "Informations personelles"
+      "title": "Informations personnelles"
     },
     "pro": {
-      "title": "Expérience professionelle"
+      "title": "Expérience professionnelle",
+      "works": [
+        {
+          "brand": "KAPIA",
+          "label": "Kapia Solutions",
+          "localisation": "Lille, Nord, France",
+          "period": "Mai-Juillet 2016",
+          "missions": [
+            "• Développement d’une application AngularJS communiquant avec une base de données Oracle à travers un WebService Java.",
+            "• Gestion d’un flux de travail Git.",
+            "• Maintenance d’un outil NodeJS utilisant Gulp afin d’automatiser les déploiements."
+          ]
+        }
+      ]
     },
     "education": {
-      "title": "Parcours scolaire"
+      "title": "Parcours scolaire",
+      "schools" : [
+      {
+        "brand": "UQAC",
+        "label": "Université du Québec à Chicoutimi",
+        "logo": "uqac-logo.png",
+        "localisation": "Chicoutimi, QC, Canada",
+        "period": "2016 - 2017",
+        "description": "Deuxième année de maîtrise en informatique, concentration jeux-vidéo. (Double diplôme)"
+      },
+      {
+        "brand": "ISEN",
+        "label": "Institut supérieur de l'électronique et du numérique de Lille",
+        "localisation": "Lille, Nord, France",
+        "logo": "isen-logo.png",
+        "period": "2015 - 2016",
+        "description": "Première année de master en développement logiciel et Big Data au sein d’une école spécialisée dans les technologies du numérique."
+      },
+      {
+        "brand": "ISEN",
+        "label": "Université du Québec à Chicoutimi",
+        "localisation": "Lille, Nord, France",
+        "logo": "uqac-logo.png",
+        "period": "2011 - 2015",
+        "description": "Acquisition du Bachelor of Technology à l’issue de trois années de classes préparatoires en mathématiques, physique et informatique."
+      },
+      {
+        "label": "Lycée Guillaume Budé",
+        "localisation": "Limeil-Brévannes, Ile-de-France, France",
+        "period": "2009 - 2011",
+        "description": "Obtention du baccalauréat avec distinctions."
+      }
+     ]
+    },
+    "skills": {
+      "title": "Compétences",
+      "language": "Langues",
+      "technology": "Technique",
+      "languages": [
+        {
+          "name": "Français",
+          "rating": 5
+        },
+        {
+          "name": "Anglais",
+          "rating": 4
+        },
+        {
+          "name": "Allemand",
+          "rating": 2
+        },
+        {
+          "name": "Espagnol",
+          "rating": 1
+        }
+      ],
+      "technologies": [
+        {
+          "category": "Software",
+          "list": ["C++", "C#", "Java", ".NET"]
+        },
+        {
+          "category": "Scripting",
+          "list": ["Python", "Bash"]
+        },
+        {
+          "category": "Web",
+          "list": ["Html", "Css", "Javascript", "NodeJS", "ExpressJS", "AngularJS"]
+        },
+        {
+          "category": "Base de données",
+          "list": ["PostgreSQL", "MongoDB"]
+        },
+        {
+          "category": "Gestionnaires de version",
+          "list": ["Git", "SVN"]
+        },
+        {
+          "category": "IDE",
+          "list": ["Netbeans", "VisualStudio", "AndroidStudio", "Eclipse", "Atom", "Webstorm"]
+        },
+        {
+          "category": "Moteurs de jeu",
+          "list": ["UnityEngine"]
+        },
+        {
+          "category": "Autres",
+          "list": ["Suite Adobe", "Pack Office", "OpenGL"]
+        }
+      ]
     },
     "achievements": {
       "title": "Dernières réalisations"
     },
     "hobbies": {
-      "title": "Loisirs"
+      "title": "Loisirs",
+      "list": [
+        {
+          "name": "Clarinette",
+          "picture": ""
+        },
+        {
+          "name": "Piano",
+          "picture": ""
+        },
+        {
+          "name": "Ping-pong",
+          "picture": ""
+        }
+      ]
     }
   },
   "projects" : {
     "title": "Dernières réalisations",
-    "subtitle": "Vous trouverez ici un détail de mes derniers projets.",
+    "subtitle": "Voici une liste de mes derniers projets.",
     "list":
     [
       {
         "icon": "fa fa-magnet",
         "title": "Lambda Engine",
-        "subtitle": "Un moteur de jeu en pur Javascript",
+        "subtitle": "Un moteur de jeu en pur Javascript.",
         "link": "#lambda-engine",
         "picture": "lambda-engine-1.PNG",
-        "content": "Lambda Engine est un moteur de jeu réalisé dans le cadre du cours de conception de jeux vidéos à l'UQAC Chicoutimi."
+        "tags": ["html", "css", "js"],
+        "period": "Octobre 2016",
+        "content": "Lambda Engine est un moteur de jeu réalisé dans le cadre du cours de conception de jeux vidéos à l'UQAC Chicoutimi.",
+        "order": 8
       },
       {
         "icon": "fa fa-sun-o",
         "title": "Eclipse",
-        "subtitle": "Un jeu vidéo de type Puzzle/Plateforme exploitant la dualité ombre et lumière. Réalisé sur Unity.",
+        "subtitle": "Un jeu vidéo de type Puzzle/Plateforme exploitant la dualité ombre et lumière. Réalisé avec Unity.",
         "link": "#eclipse",
-        "picture": "pez-audio-player-1.PNG"
-      },
-      {
-        "icon": "fa fa-university",
-        "title": "Dynasty",
-        "subtitle": "Un jeu de stratégie en temps réel réalisé en C#.",
-        "link": "#dynasty",
-        "picture": "pez-audio-player-1.PNG"
-      },
-      {
-        "icon": "fa fa-map",
-        "title": "TSP Solver",
-        "subtitle": "Un application JavaScript utilisant WebSocket pour communiquer avec un serveur en C++ calculant le plus court chemin entre des points géographiques à l'aide de l'algorithme de Little.",
-        "link": "#tsp-solver",
-        "picture": "pez-audio-player-1.PNG"
-      },
-      {
-        "icon": "fa fa-music",
-        "title": "P.E.Z Audio Player",
-        "subtitle": "Une application Android 5.0+ faisant office de librairie musicale.",
-        "link": "#pez-audio-player",
-        "picture": "pez-audio-player-1.PNG"
-      },
-      {
-        "icon": "fa fa-film",
-        "title": "Constellation Series",
-        "subtitle": "Une application AngularJS permettant de garder le fil de ses séries suivies, connectée avec une solution domotique à travers un serveur en C#.",
-        "link": "#constellation-series",
-        "picture": "pez-audio-player-1.PNG"
-      },
-      {
-        "icon": "fa fa-home",
-        "title": "The Village",
-        "subtitle": "Une application Androïd d'une alternative au jeu Mafia. Connectée avec une base MongoDB à travers un WebService REST. Chat en ligne avec Socket.IO.",
-        "link": "#the-village",
-        "picture": "pez-audio-player-1.PNG"
-      },
-      {
-        "icon": "fa fa-users",
-        "title": "Hire",
-        "subtitle": "Une application MEAN (Mongo Express Angular Node) designée afin de faciliter le travail du services relation humaine d'une entreprise.",
-        "link": "#hire",
-        "picture": "pez-audio-player-1.PNG"
+        "picture": "eclipse-1.png",
+        "tags": ["c#", "unity"],
+        "period": "Octobre - Décembre 2016",
+        "order": 9
       },
       {
         "icon": "fa fa-chrome",
         "title": "JChrome",
         "subtitle": "Une implémentation Java d'un navigateur Web utilisant Rhino et JSoup.",
         "link": "#jchrome",
-        "picture": "pez-audio-player-1.PNG"
+        "picture": "jchrome-logo.jpg",
+        "tags": ["java"],
+        "period": "Mars - Juin 2014",
+        "order": 2
+      },
+      {
+        "icon": "fa fa-home",
+        "title": "The Village",
+        "subtitle": "Une application Androïd d'une alternative au jeu Mafia. Elle est connectée avec une base MongoDB à travers un WebService REST et dispose d'un chat en ligne Socket.IO.",
+        "link": "#the-village",
+        "picture": "the-village-1.jpg",
+        "tags": ["java", "android", "node", "express", "mongo"],
+        "period": "Mai - Décembre 2016",
+        "order": 7
+      },
+      {
+        "icon": "fa fa-music",
+        "title": "P.E.Z Audio Player",
+        "subtitle": "Une application de blibliothèque musicale connectée pour Android 5.0+.",
+        "link": "#pez-audio-player",
+        "picture": "pez-audio-player-pub.jpg",
+        "tags": ["java", "android"],
+        "period": "Octobre - Novembre 2015",
+        "order": 4
+      },
+      {
+        "icon": "fa fa-film",
+        "title": "Constellation Series",
+        "subtitle": "Une application AngularJS permettant de garder le fil de ses séries suivies, connectée avec une solution domotique à travers un serveur en C#.",
+        "link": "#constellation-series",
+        "picture": "constellation-series-2.PNG",
+        "tags": ["c#", "js", "angular"],
+        "period": "Mars 2016",
+        "order": 5
+      },
+      {
+        "icon": "fa fa-map",
+        "title": "TSP Solver",
+        "subtitle": "Un application communiquant avec un serveur en C++ à traver un Websocket et calculant le plus court chemin entre des localisations à l'aide de l'algorithme de Little.",
+        "link": "#tsp-solver",
+        "picture": "tsp-solver-2.jpg",
+        "tags": ["c++", "js"],
+        "period": "Février - Juin 2013",
+        "order": 1
+      },
+      {
+        "icon": "fa fa-users",
+        "title": "Hire",
+        "subtitle": "Une application MEAN (Mongo Express Angular Node) designée afin de faciliter le travail du service relation humaine d'une entreprise.",
+        "link": "#hire",
+        "picture": "hire-1.PNG",
+        "tags": ["mongo", "express", "angular", "node"],
+        "period": "Avril 2016",
+        "order": 6
+      },
+      {
+        "icon": "fa fa-university",
+        "title": "Dynasty",
+        "subtitle": "Un jeu de stratégie en temps réel réalisé en C#.",
+        "link": "#dynasty",
+        "picture": "dynasty-1.png",
+        "tags": ["c#"],
+        "period": "Juillet 2015",
+        "order": 3
       }
     ]
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Besoin d'informations supplémentaires ? Envoyez moi un message !"
+    "subtitle": "Besoin d'informations supplémentaires ? Envoyez-moi un message !",
+    "object": "Objet",
+    "content": "Contenu",
+    "send": "Envoyer",
+    "info": "Vous pouvez me contacter via LinkedIn, mail ou simplement à l'aide du formulaire ci-dessous.",
+    "success" : "Votre message a bien été envoyé.",
+    "error": "Il y a eu une erreur lors de l'envoi du message. Le service n'est peut-être pas disponible dans votre région."
   }
 }
