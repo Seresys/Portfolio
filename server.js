@@ -26,7 +26,7 @@ app.get('/', function(req, res){
 
 app.post('/send',function(req,res){
 	  var mailOptions={
-	      to : PROCESS.env.USER+"@gmail.com",
+	      to : process.env.USER+"@gmail.com",
 	      subject : req.body.subject,
 	      text : req.body.body
 	  }
