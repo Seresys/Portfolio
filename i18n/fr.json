@@ -19,34 +19,31 @@
       "label": "Contact",
       "icon": "fa fa-comment"
     },
-    "linkedin": "https://ca.linkedin.com/in/francois-decan-0a2832b3",
-    "github": "https://github.com/Eldow"
+    "linkedin": "https://www.linkedin.com/in/marineripon",
+    "github": "https://github.com/Seresys"
   },
   "home": {
     "title": "Accueil",
-    "subtitle": "Bienvenue sur mon portfolio, vous trouverez ici des informations sur mon parcours et mes dernières réalisations.",
-    "line1": "Passionné par les nouvelles technologies et le jeu-vidéo, j'aime développer des applications variées pendant mon temps libre.",
-    "line2" : "Depuis 2016, j'ai créé avec une amie Lambdoid Studios, une organisation indépendante de production d'applications.",
-    "friend-link": "https://mripon.herokuapp.com",
-    "friend": "Lien vers son portfolio"
+    "subtitle": "Passionée par les nouvelles technologies, je prépare actuellement un diplôme d'ingénieur en développement logiciel et un master 2 en développement de jeux-vidéos.",
+    "line1": "J'ai la volonté de me perfectionner dans ces domaines dans mon parcours professionnel."
   },
   "resume": {
     "title": "Curriculum-Vitae",
-    "subtitle": "Développeur logiciel",
+    "subtitle": "Développeuse logiciel",
     "download": "Téléchargez mon CV au format PDF",
     "info": {
       "title": "Informations personnelles",
       "birthdate": {
         "key": "Date de naissance",
-        "value": "11/05/1994"
+        "value": "07/01/1994"
       },
       "mail": {
         "key": "E-mail",
-        "value": "fdecan.pro@gmail.com"
+        "value": "contact.mripon@gmail.com"
       },
       "address": {
         "key": "Adresse",
-        "value": "555, Boulevard de l’Université, G7H 2B1, Chicoutimi, QC, CANADA"
+        "value": "96 rue Dubé, Chicoutimi, QC G7H 2V2"
       }
     },
     "pro": {
@@ -60,7 +57,8 @@
           "missions": [
             "• Développement d’une application AngularJS communiquant avec une base de données Oracle à travers un WebService Java.",
             "• Gestion d’un flux de travail Git.",
-            "• Maintenance d’un outil NodeJS utilisant Gulp afin d’automatiser les déploiements."
+            "• Maintenance d’un outil NodeJS utilisant Gulp afin d’automatiser les déploiements.",
+            "• Réalisation de tests en PHP.",
           ]
         }
       ]
@@ -72,31 +70,31 @@
         "brand": "UQAC",
         "label": "Université du Québec à Chicoutimi",
         "logo": "uqac-logo.png",
-        "localisation": "Chicoutimi, QC, Canada",
+        "localisation": "Chicoutimi, Québec, Canada",
         "period": "2016 - 2017",
-        "description": "Deuxième année de maîtrise en informatique, concentration jeux-vidéo. (Double diplôme)"
+        "description": "Double diplôme - Maîtrise 2 en informatique, concentration jeux-vidéo."
       },
       {
         "brand": "ISEN",
-        "label": "Institut Supérieur de l'Électronique et du Numérique de Lille",
+        "label": "Institut Supérieur de l'Électronique et du Numérique",
         "localisation": "Lille, Nord, France",
         "logo": "isen-logo.png",
-        "period": "2015 - 2016",
-        "description": "Première année de master en développement logiciel et Big Data au sein d’une école spécialisée dans les technologies du numérique."
+        "period": "2015 - 2017",
+        "description": "Double diplôme - Diplôme d'ingénieur en développement logiciel et Big Data, profil manager."
       },
       {
         "brand": "ISEN",
-        "label": "Université du Québec à Chicoutimi",
+        "label": "Institut Supérieur de l'Électronique et du Numérique",
         "localisation": "Lille, Nord, France",
-        "logo": "uqac-logo.png",
+        "logo": "isen-logo.png",
         "period": "2011 - 2015",
-        "description": "Acquisition du Bachelor of Technology à l’issue de trois années de classes préparatoires en mathématiques, physique et informatique."
+        "description": "Bachelor of Technology - Classe préparatoire en mathématiques, physique et informatique."
       },
       {
-        "label": "Lycée Guillaume Budé",
-        "localisation": "Limeil-Brévannes, Ile-de-France, France",
-        "period": "2009 - 2011",
-        "description": "Obtention du baccalauréat avec distinctions."
+        "label": "Lycée Madame de Sévigné",
+        "localisation": "Charleville-Mézières, Ardennes, France",
+        "period": "2008 - 2011",
+        "description": "Baccalauréat scientifique, spécialité Sciences de la Vie et de la Terre."
       }
      ]
     },
@@ -114,18 +112,14 @@
           "rating": 4
         },
         {
-          "name": "Allemand",
-          "rating": 2
-        },
-        {
           "name": "Espagnol",
-          "rating": 1
+          "rating": 2
         }
       ],
       "technologies": [
         {
           "category": "Software",
-          "list": ["C++", "C#", "Java"]
+          "list": ["C", "C++", "C#", "Java"]
         },
         {
           "category": "Scripting",
@@ -133,14 +127,18 @@
         },
         {
           "category": "Web",
-          "list": ["Html", "Css", "Javascript", "NodeJS", "ExpressJS", "AngularJS"]
+          "list": ["HTML", "CSS", "Javascript", "NodeJS", "ExpressJS", "AngularJS"]
+        },
+        {
+          "category": "Intelligence artificielle",
+          "list": ["Steering behaviors", "Logique floue", "Algorithmes de recherche de chemin"]
         },
         {
           "category": "Base de données",
           "list": ["PostgreSQL", "MongoDB"]
         },
         {
-          "category": "Gestionnaires de version",
+          "category": "Dépôt de subversion",
           "list": ["Git", "SVN"]
         },
         {
@@ -153,7 +151,7 @@
         },
         {
           "category": "Autres",
-          "list": ["Suite Adobe", "Pack Office", "OpenGL"]
+          "list": ["Linux", "Suite Adobe", "Pack Office", "OpenGL"]
         }
       ]
     },
@@ -164,15 +162,15 @@
       "title": "Loisirs",
       "list": [
         {
-          "name": "Clarinette",
+          "name": "Peinture",
           "picture": "clarinet.png"
         },
         {
-          "name": "Piano",
+          "name": "Histoire",
           "picture": "piano.png"
         },
         {
-          "name": "Ping-pong",
+          "name": "Jeux-vidéo",
           "picture": "ping-pong.png"
         }
       ]
@@ -188,91 +186,100 @@
       {
         "icon": "fa fa-magnet",
         "title": "Lambda Engine",
-        "subtitle": "Un moteur de jeu en pur Javascript.",
+        "subtitle": "Lambda Engine est un moteur de jeu 2D gérant les collisions entre des points, cercles, AABB, OBB et K-DOP.",
         "link": "#lambda-engine",
         "picture": "lambda-engine-1.PNG",
-        "tags": ["html", "css", "js"],
+        "tags": ["HTML", "CSS", "Javascript"],
         "period": "Octobre 2016",
-        "content": "Lambda Engine est un moteur de jeu réalisé dans le cadre du cours de conception de jeux vidéos à l'UQAC Chicoutimi.",
         "order": 8
+      },
+      {
+        "icon": "fa fa-magnet",
+        "title": "Raven",
+        "subtitle": "Développement de l'intelligence artificielle d'une équipe de bots dans le contexte d'un jeu de tir en C++.",
+        "link": "#raven",
+        "picture": "lambda-engine-1.PNG",
+        "tags": ["C++", "IA"],
+        "period": "Décembre 2016",
+        "order": 10
       },
       {
         "icon": "fa fa-sun-o",
         "title": "Eclipse",
-        "subtitle": "Un jeu vidéo de type Puzzle/Plateforme exploitant la dualité ombre et lumière. Réalisée avec Unity.",
+        "subtitle": "Jeu de puzzle-plateforme en 2D exploitant la dualité du personnage principal et de son ombre.",
         "link": "#eclipse",
         "picture": "eclipse-1.png",
-        "tags": ["c#", "unity"],
+        "tags": ["C#", "unity"],
         "period": "Octobre - Décembre 2016",
         "order": 9
       },
       {
         "icon": "fa fa-chrome",
         "title": "JChrome",
-        "subtitle": "Une implémentation Java d'un navigateur Web utilisant Rhino et JSoup.",
+        "subtitle": "Navigateur Web développé en Java capable d’afficher des pages en HTML, des images et des liens cliquables. Interprète également les balises basiques. Utilise Rhino et JSoup.",
         "link": "#jchrome",
         "picture": "jchrome-logo.jpg",
-        "tags": ["java"],
+        "tags": ["Java"],
         "period": "Mars - Juin 2014",
         "order": 2
       },
       {
         "icon": "fa fa-home",
         "title": "The Village",
-        "subtitle": "Une application Androïd d'une alternative au jeu Mafia. Elle est connectée avec une base MongoDB à travers un WebService REST et dispose d'un chat en ligne Socket.IO.",
+        "subtitle": "Application Android reprenant la variante du jeu Mafia \"Les loups-garous de Thiercelieux\" . Connectée avec une base MongoDB via un WebService REST. Dispose d'un chat en ligne Socket.IO.",
         "link": "#the-village",
         "picture": "the-village-1.jpg",
-        "tags": ["java", "android", "node", "express", "mongo"],
+        "tags": ["Java", "Android", "NodeJS", "ExpressJS", "MongoDB"],
         "period": "Mai - Décembre 2016",
         "order": 7
       },
       {
         "icon": "fa fa-music",
-        "title": "P.E.Z Audio Player",
-        "subtitle": "Une application de blibliothèque musicale connectée pour Android 5.0+.",
+        "title": "Regaplay",
+        "subtitle": "Application de bibliothèque musicale développée pour Android 5.0+.",
         "link": "#pez-audio-player",
         "picture": "pez-audio-player-pub.jpg",
-        "tags": ["java", "android"],
+        "tags": ["Java", "Android"],
         "period": "Octobre - Novembre 2015",
         "order": 4
       },
       {
         "icon": "fa fa-film",
         "title": "Constellation Series",
-        "subtitle": "Une application AngularJS permettant de garder le fil de ses séries suivies, connectée avec une solution domotique à travers un serveur en C#.",
+        "subtitle": "Application AngularJS utilisant la plateforme domotique Constellation et l'API TMDb (The Movie Database) permettant le suivi de séries. L'appareil mobile de l'utilisateur est notifié lors de la parution d'un nouvel épisode.",
         "link": "#constellation-series",
         "picture": "constellation-series-2.PNG",
-        "tags": ["c#", "js", "angular"],
+        "tags": ["C#", "Javascript", "AngularJS"],
         "period": "Mars 2016",
         "order": 5
       },
       {
         "icon": "fa fa-map",
         "title": "TSP Solver",
-        "subtitle": "Un application communiquant avec un serveur en C++ à traver un Websocket et calculant le plus court chemin entre des localisations à l'aide de l'algorithme de Little.",
+        "subtitle": "Application utilisant Google API permettant le calcul du chemin le plus court entre les points d’une carte. La communication entre le client JS et le serveur C++ s’effectue à l’aide de WebSocket.",
         "link": "#tsp-solver",
         "picture": "tsp-solver-2.jpg",
-        "tags": ["c++", "js"],
+        "tags": ["C++", "Javascript"],
         "period": "Février - Juin 2013",
         "order": 1
       },
       {
         "icon": "fa fa-users",
         "title": "Hire",
-        "subtitle": "Une application MEAN (Mongo Express Angular Node) designée afin de faciliter le travail du service relation humaine d'une entreprise.",
+        "subtitle": "Plateforme Web MEAN (MongoDB, Express, AngularJS, NodeJS) destinée à faciliter la gestion des candidatures reçues par une entreprise.",
         "link": "#hire",
         "picture": "hire-1.PNG",
-        "tags": ["mongo", "express", "angular", "node"],
+        "tags": ["MongoDB", "ExpressJS", "AngularJS", "NodeJS"],
         "period": "Avril 2016",
         "order": 6
       },
       {
         "icon": "fa fa-university",
         "title": "Dynasty",
-        "subtitle": "Un jeu de stratégie en temps réel réalisé en C#.",
+        "subtitle": "Jeu de gestion/stratégie en temps réel à visée de vulgarisation historique développé en C#.",
         "link": "#dynasty",
         "picture": "dynasty-1.png",
-        "tags": ["c#"],
+        "tags": ["C#", "IA"],
         "period": "Juillet 2015",
         "order": 3
       }
@@ -280,7 +287,7 @@
   },
   "contact": {
     "title": "Contact",
-    "subtitle": "Besoin d'informations supplémentaires ? Envoyez-moi un message !",
+    "subtitle": "Mon profil vous intéresse? N'hésitez pas à me contacter.",
     "object": "Objet",
     "content": "Contenu",
     "send": "Envoyer",
