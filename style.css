@@ -1,3 +1,66 @@
+body, html {
+    height: 100%;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif ;
+}
+
+h1{
+  font-size: 5em;
+}
+
+#main{
+  min-height: 100%;
+	margin: 0 auto -25px;
+  padding-bottom : 50px;
+}
+
+.intro-title{
+  color: white;
+  top: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  height:220px;
+  margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
+  transform: translateY(-50%);
+}
+
+.parallax {
+    background-image: url("img/blur_background.jpg");
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+.navbar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+}
+
+.footer {
+  clear:both;
+  height: 25px;
+  color: white;
+  background-color: #071016;
+  text-align: center;
+  font-size : 1em;
+}
+
+.hidden-mobile {
+  float:right;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 786px) {
+  .hidden-mobile {
+    visibility: hidden;
+  }
+}
+
+/* =============== Base style ======================*/
 .no-gutter {
   padding: 0;
 }

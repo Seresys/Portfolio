@@ -17,9 +17,9 @@
         <div class="col-md-2"><i class="fa fa-envelope"></i> {{ data.resume.info.mail.key }} </div>
         <div class="col-md-10"> {{ data.resume.info.mail.value }} </div>
       </div>
-      <div class="row">
-        <div class="col-md-2"><i class="fa fa-map-marker"></i> {{ data.resume.info.address.key }} </div>
-        <div class="col-md-10"> {{ data.resume.info.address.value }} </div>
+      <div class="row" ng-repeat="address in data.resume.info.address">
+        <div class="col-md-2"><i class="fa fa-map-marker"></i> {{ address.key }} </div>
+        <div class="col-md-10"> {{ address.value }} </div>
       </div>
     </div>
   </div>

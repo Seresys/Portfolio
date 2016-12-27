@@ -22,29 +22,33 @@
 
         <!-- HEADER AND NAVBAR -->
         <header>
-            <nav class="navbar navbar-inverse">
+            <nav class="navbar navbar-inverse col-md-12">
             <div class="container">
                 <div class="navbar-header">
                     <a class="navbar-brand" href="#/"><i class="fa fa-asterisk"></i>  {{ data.menu.brand.label }}</a>
                 </div>
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#/"><i ng-class="data.menu.home.icon"></i> {{ data.menu.home.label }}</a></li>
-                    <li><a href="#resume"><i ng-class="data.menu.resume.icon"></i> {{ data.menu.resume.label }}</a></li>
-                    <li><a href="#projects"><i ng-class="data.menu.projects.icon"></i> {{ data.menu.projects.label }}</a></li>
-                    <li><a href="#contact"><i ng-class="data.menu.contact.icon"></i> {{ data.menu.contact.label }}</a></li>
-                    <li><a ng-href="{{data.menu.github}}"><i class="fa fa-github"></i> Github </a></li>
-                    <li><a ng-href="{{data.menu.linkedin}}"><i class="fa fa-linkedin"></i> LinkedIn </a></li>
+                    <li><a href="#/"><i ng-class="data.menu.home.icon"></i><div class="hidden-mobile">{{ data.menu.home.label }}</div></a></li>
+                    <li><a href="#resume"><i ng-class="data.menu.resume.icon"></i><div class="hidden-mobile">{{ data.menu.resume.label }}</div></a></li>
+                    <li><a href="#projects"><i ng-class="data.menu.projects.icon"></i><div class="hidden-mobile">{{ data.menu.projects.label }}</div></a></li>
+                    <li><a href="#contact"><i ng-class="data.menu.contact.icon"></i><div class="hidden-mobile">{{ data.menu.contact.label }}</div></a></li>
+                    <li><a ng-href="{{data.menu.github}}"><i class="fa fa-github"></i><div class="hidden-mobile">Github</div></a></li>
+                    <li><a ng-href="{{data.menu.linkedin}}"><i class="fa fa-linkedin"></i><div class="hidden-mobile">LinkedIn</div></a></li>
                 </ul>
             </div>
             </nav>
         </header>
-
+        <div class="parallax"></div>
         <!-- MAIN CONTENT AND INJECTED VIEWS -->
         <div id="main">
             <!-- angular templating -->
             <!-- this is where content will be injected -->
             <div ng-view class="fade"></div>
         </div>
+
+        <footer class="footer">
+            © 2016-2017 Marine Ripon
+        </footer>
     </body>
     </html>

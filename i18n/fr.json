@@ -1,7 +1,7 @@
 {
   "menu": {
     "brand": {
-      "label": "Mon Portfolio"
+      "label": "Marine Ripon"
     },
     "home": {
       "label": "Accueil",
@@ -23,13 +23,13 @@
     "github": "https://github.com/Seresys"
   },
   "home": {
-    "title": "Accueil",
-    "subtitle": "Passionée par les nouvelles technologies, je prépare actuellement un diplôme d'ingénieur en développement logiciel et un master 2 en développement de jeux-vidéos.",
-    "line1": "J'ai la volonté de me perfectionner dans ces domaines dans mon parcours professionnel."
+    "title": "Bienvenue sur mon portfolio.",
+    "subtitle": "Je m'appelle Marine Ripon. Passionnée par les nouvelles technologies, je prépare actuellement un diplôme d'ingénieur en développement logiciel et une maîtrise 2 en développement de jeux-vidéos.",
+    "line1": "Vous pourrez découvrir ici mon parcours ainsi que mes différents projets et réalisations."
   },
   "resume": {
     "title": "Curriculum-Vitae",
-    "subtitle": "Développeuse logiciel",
+    "subtitle": "Développeuse logiciel, mobile et Web.",
     "download": "Téléchargez mon CV au format PDF",
     "info": {
       "title": "Informations personnelles",
@@ -41,10 +41,17 @@
         "key": "E-mail",
         "value": "contact.mripon@gmail.com"
       },
-      "address": {
-        "key": "Adresse",
-        "value": "96 rue Dubé, Chicoutimi, QC G7H 2V2"
-      }
+      "address": [
+          {
+            "key": "Adresse au Québec",
+            "value": "Chicoutimi, QC G7H 2V2, Canada"
+          },
+          {
+            "key": "Adresse en France",
+            "value": "Lille, 59 000"
+          }
+        ]
+
     },
     "pro": {
       "title": "Expérience professionnelle",
@@ -55,10 +62,10 @@
           "localisation": "Lille, Nord, France",
           "period": "Mai-Juillet 2016",
           "missions": [
-            "• Développement d’une application AngularJS communiquant avec une base de données Oracle à travers un WebService Java.",
+            "• Développement d’une application AngularJS communiquant avec une base de données Oracle via un WebService Java.",
             "• Gestion d’un flux de travail Git.",
             "• Maintenance d’un outil NodeJS utilisant Gulp afin d’automatiser les déploiements.",
-            "• Réalisation de tests en PHP.",
+            "• Réalisation de tests en PHP."
           ]
         }
       ]
