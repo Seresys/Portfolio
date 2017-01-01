@@ -7,10 +7,51 @@ h1{
   font-size: 5em;
 }
 
+a, a:visited{
+  color: #4287B2;
+}
+
+a:hover{
+  color: #2F607F;
+  text-decoration: none;
+}
+
 #main{
   min-height: 100%;
 	margin: 0 auto -25px;
   padding-bottom : 50px;
+}
+
+.typo-font{
+  font-family : "Nixie One", "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif ;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.fa .big-fa {
+  font-size:25px;
+}
+.panel .panel-heading{
+  background-color: transparent;
+  border: none;
+}
+
+.panel-default{
+  background-color: rgba(255, 255, 255, 0.9);
+  border: none;
+  margin-top: 100px;
+}
+
+.glyphicon-ring {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 4px solid #4287B2;
+  color: #4287B2;
+  display: inline-table;
+  text-align: center;
 }
 
 .intro-title{
@@ -20,6 +61,11 @@ h1{
   height:220px;
   margin-top: 50vh; /* poussé de la moitié de hauteur de viewport */
   transform: translateY(-50%);
+}
+
+.intro-title .col-md-3{
+  height:100%;
+  display: flex;
 }
 
 .parallax {
@@ -38,15 +84,50 @@ h1{
   left: 0;
   z-index: 9999;
   width: 100%;
+  background-color: #4287B2;
+  border-radius: 0;
+  border-color: #4287B2;
+}
+.navbar-inverse .navbar-nav>li>a{
+  color: white;
+  float: right;
 }
 
+.navbar-header{
+  float:left;
+}
+
+.navbar-inverse .navbar-brand{
+  color: white;
+  font-weight: lighter;
+}
 .footer {
   clear:both;
   height: 25px;
   color: white;
-  background-color: #071016;
+  background-color: #262626;
   text-align: center;
   font-size : 1em;
+}
+
+.large-container{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.panel-default{
+    border-radius: 0;
+    margin-bottom:100px;
+}
+
+.panel-large {
+  height: 150px;
+  width: 100%;
+  text-align: center;
+  display: flex; /* contexte sur le parent */
+  flex-direction: column; /* direction d'affichage verticale */
+  justify-content: center;
 }
 
 .hidden-mobile {
@@ -54,10 +135,29 @@ h1{
   margin-left: 5px;
 }
 
-@media screen and (max-width: 786px) {
+@media screen and (max-width: 768px) {
   .hidden-mobile {
-    visibility: hidden;
+    display:none;
   }
+  .navbar-inverse .navbar-nav>li>a{
+    float: left;
+  }
+  .navbar-inverse .navbar-right{
+    margin-left: 200px;
+  }
+}
+.pic-rounded{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: auto;
+  border: 10px solid #4287B2;
+  background-color: #4287B2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("img/cv_pic.jpg");
 }
 
 /* =============== Base style ======================*/

@@ -1,32 +1,11 @@
-<div class="jumbotron text-center">
-  <h1>{{ data.resume.title }}</h1>
-  <p>{{ data.resume.subtitle }}</p>
-  <p class="text-info"><a href="img/cv-fdecan.pdf" download="CV-PDF"><i class="fa fa-download"></i> {{ data.resume.download }}</a></p>
-</div>
-<div class="container">
-  <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2> <i class="fa fa-user"></i> {{ data.resume.info.title }} <h2>
-    </div>
-    <div class="panel-body">
-      <div class="row">
-        <div class="col-md-2"><i class="fa fa-birthday-cake"></i> {{ data.resume.info.birthdate.key }} </div>
-        <div class="col-md-10"> {{ data.resume.info.birthdate.value }} </div>
-      </div>
-      <div class="row">
-        <div class="col-md-2"><i class="fa fa-envelope"></i> {{ data.resume.info.mail.key }} </div>
-        <div class="col-md-10"> {{ data.resume.info.mail.value }} </div>
-      </div>
-      <div class="row" ng-repeat="address in data.resume.info.address">
-        <div class="col-md-2"><i class="fa fa-map-marker"></i> {{ address.key }} </div>
-        <div class="col-md-10"> {{ address.value }} </div>
-      </div>
-    </div>
+<div class="container large-container">
+  <div class="panel panel-default panel-large typo-font">
+    <h2><p class="row"><a href="img/cv-fdecan.pdf" download="CV-PDF"><i class="fa fa-download"></i> {{ data.resume.download }}</a></p></h2>
   </div>
 
   <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2> <i class="fa fa-suitcase"></i> {{ data.resume.pro.title }} <h2>
+    <div class="panel-heading typo-font bold">
+      <h2> <div class="glyphicon-ring"><i class="fa big-fa fa-suitcase"></i></div> {{ data.resume.pro.title }} <h2>
     </div>
     <div class="panel-body" ng-repeat="work in data.resume.pro.works">
       <div class="row">
