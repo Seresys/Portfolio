@@ -4,13 +4,23 @@
   </div>
 
   <div class="panel panel-default">
-    <div class="panel-heading typo-font bold">
-      <h2> <div class="glyphicon-ring"><i class="fa big-fa fa-suitcase"></i></div> {{ data.resume.pro.title }} <h2>
+    <div class="panel-heading typo-font">
+      <h2>
+        <span class="fa-ring fa-stack fa-lg">
+          <i class="fa fa-circle-o fa-stack-2x"></i>
+          <i class="fa fa-suitcase fa-stack-1x"></i>
+        </span>
+        {{ data.resume.pro.title }}
+      </h2>
     </div>
     <div class="panel-body" ng-repeat="work in data.resume.pro.works">
-      <div class="row">
+      <div class="row typo-font panel-subheading">
+        <h4 class="col-md-6">
+          {{work.role}}
+          {{data.resume.pro.for}}
+          {{ work.label }}
+        </h4>
         <h4 class="col-md-2">{{ work.period }}</h4>
-        <h4 class="col-md-6">{{ work.label }}</h4>
         <h4 class="col-md-4">{{ work.localisation }}</h4>
       </div>
       <div class="row" ng-repeat="mission in work.missions">
@@ -20,51 +30,82 @@
   </div>
 
   <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2> <i class="fa fa-university"></i> {{ data.resume.education.title }}</h2>
+    <div class="panel-heading typo-font">
+      <h2>
+        <span class="fa-ring fa-stack fa-lg">
+          <i class="fa fa-circle-o fa-stack-2x"></i>
+          <i class="fa fa-graduation-cap fa-stack-1x"></i>
+        </span>
+        {{ data.resume.education.title }}
+      </h2>
     </div>
-    <div class="panel-body" ng-repeat="school in data.resume.education.schools">
-      <div class="row">
-        <h4 class="col-md-2">{{ school.period }}</h4>
-        <h4 class="col-md-6">{{ school.label }}</h4>
-        <h4 class="col-md-4">{{ school.localisation }}</h4>
-      </div>
-      <div class="row">
-            <div class="col-md-12"> {{ school.description }}</div>
-      </div>
+  <div class="panel-body" ng-repeat="school in data.resume.education.schools">
+    <div class="row typo-font panel-subheading">
+      <h4 class="col-md-12"> {{ school.description }}</h4>
     </div>
+    <div class="row">
+      <div class="col-md-2">{{ school.period }}</div>
+      <div class="col-md-6">{{ school.label }}</div>
+      <div class="col-md-4">{{ school.localisation }}</div>
+    </div>
+  </div>
   </div>
 
   <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2> <i class="fa fa-trophy"></i> {{ data.resume.skills.title }}</h2>
+    <div class="panel-heading typo-font">
+      <h2>
+        <span class="fa-ring fa-stack fa-lg">
+          <i class="fa fa-circle-o fa-stack-2x"></i>
+          <i class="fa fa-puzzle-piece fa-stack-1x"></i>
+        </span>
+        {{ data.resume.skills.title }}
+      </h2>
     </div>
     <div class="panel-body">
-      <div class="row">
-        <h3 class="col-md-12">{{ data.resume.skills.language }}</h3>
+      <div class="row typo-font panel-subheading">
+        <h4 class="col-md-12">{{ data.resume.skills.language }}</h4>
       </div>
-      <div class="row" ng-repeat="language in data.resume.skills.languages">
-        <h4 class="col-md-4">{{ language.name }}</h4>
-        <div class="col-md-8"><span ng-repeat="star in GetNumber(language.rating) track by $index">{{star}}<i class="fa fa-star"></i></span></div>
+      <div class="centered-panel">
+        <div class="row">
+          <div ng-repeat="language in data.resume.skills.languages">
+            <h4 class="col-md-4">{{ language.name }}</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div ng-repeat="language in data.resume.skills.languages">
+            <div class="col-md-4"><span ng-repeat="star in GetNumber(language.rating) track by $index">{{star}}<i class="fa fa-star"></i></span></div>
+          </div>
+        </div>
       </div>
-      <div class="row">
-        <h3 class="col-md-12">{{ data.resume.skills.technology }}</h3>
+      <div class="row typo-font panel-subheading">
+        <h4 class="col-md-12">{{ data.resume.skills.technology }}</h4>
       </div>
-      <div class="row" ng-repeat="tech in data.resume.skills.technologies">
-        <h4 class="col-md-4">{{ tech.category }}</h4>
-        <div class="col-md-8"><span ng-repeat="skill in tech.list" class="badge"> {{ skill }} </span></div>
+      <div class="centered-panel">
+        <div ng-repeat="tech in data.resume.skills.technologies">
+          <div class="col-md-4">
+            <h4 class="row">{{ tech.category }}</h4>
+            <div class="row badge-container"><span ng-repeat="skill in tech.list" class="badge"> {{ skill }}</div>
+          </div>
+
+        </div>
       </div>
     </div>
   </div>
 
   <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2> <i class="fa fa-gears"></i> {{ data.resume.achievements.title }}</h2>
+    <div class="panel-heading typo-font">
+      <h2>
+        <span class="fa-ring fa-stack fa-lg">
+          <i class="fa fa-circle-o fa-stack-2x"></i>
+          <i class="fa fa-spinner fa-stack-1x"></i>
+        </span>
+        {{ data.resume.achievements.title }}
+      </h2>
     </div>
     <div class="panel-body" ng-repeat="project in data.projects.list | orderBy: '-order'">
-      <div class="row">
-        <h4 class="col-md-4">{{ project.period }}</h4>
-        <h4 class="col-md-8">{{ project.title }}</h4>
+      <div class="row typo-font panel-subheading">
+        <h4 class="col-md-4">{{ project.title }}</h4>
+        <h4 class="col-md-8">{{ project.period }}</h4>
       </div>
       <div class="row">
             <div class="col-md-12"> {{ project.subtitle }}</div>
@@ -73,15 +114,23 @@
   </div>
 
   <div class="panel panel-default">
-    <div class="panel-heading">
-      <h2> <i class="fa fa-gamepad"></i> {{ data.resume.hobbies.title }}</h2>
+    <div class="panel-heading typo-font">
+      <h2>
+        <span class="fa-ring fa-stack fa-lg">
+          <i class="fa fa-circle-o fa-stack-2x"></i>
+          <i class="fa fa-headphones fa-stack-1x"></i>
+        </span>
+        {{ data.resume.hobbies.title }}
+      </h2>
     </div>
     <div class="panel-body">
-      <div class="row">
+      <div class="row centered-panel">
         <div class="col-md-4" ng-repeat="hobby in data.resume.hobbies.list">
-          <h3 class="text-center">{{hobby.name}}</h3>
-          <img class="img-responsive center-block" ng-src="img/{{hobby.picture}}">
-        </div>
+          <h4>{{hobby.name}}</h4>
+          <span class="fa-stack fa-lg large-fa">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa {{hobby.picture}} fa-stack-1x fa-inverse"></i>
+          </span>
       </div>
     </div>
   </div>

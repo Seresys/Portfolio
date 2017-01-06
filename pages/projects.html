@@ -1,17 +1,25 @@
-<div class="col-md-12 col-sm-12">
+<div class="col-md-12 col-sm-12 body-container">
  <div class="row no-gutter">
   <div class="col-md-4 no-gutter" ng-repeat="p in data.projects.list track by $index">
-   <div class="hovereffect">
-    <a ng-href="{{p.link}}" ng-click="SetProject($index)">
-      <img class="img-responsive" ng-src="img/{{p.picture}}" alt="{{p.picture}}" style="width:100%; max-height:238px; object-fit:cover;">
-      <div class="overlay">
-        <h2 class="text-center"><i ng-class="p.icon"></i> {{ p.title }}</h2>
-        <p ng-bind="p.subtitle"></p>
-        <span ng-repeat="tag in p.tags">
-          <span class="badge">{{ tag }}</span>
-        </span>
-      </div>
-    </a>
+   <div class="hovereffect lg-bar">
+    <img class="img-responsive" ng-src="img/{{p.picture}}" alt="{{p.picture}}" style="width:100%; max-height:238px; object-fit:cover;">-->
+    <div class="overlay">
+      <h2 class="text-center"><i ng-class="p.icon"></i> {{ p.title }}</h2>
+      <p ng-bind="p.subtitle"></p>
+      <span ng-repeat="tag in p.tags">
+        <span class="badge">{{ tag }}</span>
+      </span>
+    </div>
+
+    <!--
+<div class="hovereffect lg-bar bg-img" style="background-image:url(img/{{p.picture}})">
+    <div class="overlay">
+      <h2 class="text-center"><i ng-class="p.icon"></i> {{ p.title }}</h2>
+      <p ng-bind="p.subtitle"></p>
+      <span ng-repeat="tag in p.tags">
+        <span class="badge">{{ tag }}</span>
+      </span>
+    </div>-->
    </div>
   </div>
  </div>

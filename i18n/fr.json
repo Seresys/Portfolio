@@ -55,10 +55,12 @@
     },
     "pro": {
       "title": "Expérience professionnelle",
+      "for" : "pour",
       "works": [
         {
           "brand": "KAPIA",
           "label": "Kapia Solutions",
+          "role" : "Développeuse Web",
           "localisation": "Lille, Nord, France",
           "period": "Mai-Juillet 2016",
           "missions": [
@@ -79,7 +81,7 @@
         "logo": "uqac-logo.png",
         "localisation": "Chicoutimi, Québec, Canada",
         "period": "2016 - 2017",
-        "description": "Double diplôme - Maîtrise 2 en informatique, concentration jeux-vidéo."
+        "description": "Double diplôme - Maîtrise 2 en informatique, concentration jeux-vidéo"
       },
       {
         "brand": "ISEN",
@@ -87,7 +89,7 @@
         "localisation": "Lille, Nord, France",
         "logo": "isen-logo.png",
         "period": "2015 - 2017",
-        "description": "Double diplôme - Diplôme d'ingénieur en développement logiciel et Big Data, profil manager."
+        "description": "Double diplôme - Diplôme d'ingénieur en développement logiciel et Big Data, profil manager"
       },
       {
         "brand": "ISEN",
@@ -95,13 +97,13 @@
         "localisation": "Lille, Nord, France",
         "logo": "isen-logo.png",
         "period": "2011 - 2015",
-        "description": "Bachelor of Technology - Classe préparatoire en mathématiques, physique et informatique."
+        "description": "Bachelor of Technology - Classe préparatoire en mathématiques, physique et informatique"
       },
       {
         "label": "Lycée Madame de Sévigné",
         "localisation": "Charleville-Mézières, Ardennes, France",
         "period": "2008 - 2011",
-        "description": "Baccalauréat scientifique, spécialité Sciences de la Vie et de la Terre."
+        "description": "Baccalauréat scientifique - Spécialité Sciences de la Vie et de la Terre"
       }
      ]
     },
@@ -134,7 +136,7 @@
         },
         {
           "category": "Web",
-          "list": ["HTML", "CSS", "Javascript", "NodeJS", "ExpressJS", "AngularJS"]
+          "list": ["HTML", "CSS", "LESS", "SASS", "Javascript", "jQuery", "NodeJS", "ExpressJS", "AngularJS"]
         },
         {
           "category": "Intelligence artificielle",
@@ -157,6 +159,10 @@
           "list": ["UnityEngine"]
         },
         {
+          "category": "Gestion de projet",
+          "list": ["Évaluation et gestion des risques", "Gestion des ressources", "Méthode Agile"]
+        },
+        {
           "category": "Autres",
           "list": ["Linux", "Suite Adobe", "Pack Office", "OpenGL"]
         }
@@ -170,15 +176,15 @@
       "list": [
         {
           "name": "Peinture",
-          "picture": "clarinet.png"
+          "picture": "fa-paint-brush"
         },
         {
           "name": "Histoire",
-          "picture": "piano.png"
+          "picture": "fa-university"
         },
         {
           "name": "Jeux-vidéo",
-          "picture": "ping-pong.png"
+          "picture": "fa-gamepad"
         }
       ]
     }

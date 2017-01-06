@@ -12,7 +12,7 @@ a, a:visited{
 }
 
 a:hover{
-  color: #2F607F;
+  color: #1e3f54;
   text-decoration: none;
 }
 
@@ -36,22 +36,30 @@ a:hover{
 .panel .panel-heading{
   background-color: transparent;
   border: none;
+  color: #5C5C5C;
+  padding-bottom:0;
+}
+
+.panel-subheading{
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  margin-bottom: 15px;
 }
 
 .panel-default{
-  background-color: rgba(255, 255, 255, 0.9);
+  background-color: rgba(255, 255, 255, 0.8);
   border: none;
   margin-top: 100px;
 }
 
-.glyphicon-ring {
-  width: 45px;
-  height: 45px;
-  border-radius: 50%;
-  border: 4px solid #4287B2;
+.panel-body{
+  margin-left: 50px;
+  padding-top:0;
+}
+
+.fa-ring {
   color: #4287B2;
-  display: inline-table;
-  text-align: center;
+  font-size: 30px;
 }
 
 .intro-title{
@@ -91,6 +99,10 @@ a:hover{
 .navbar-inverse .navbar-nav>li>a{
   color: white;
   float: right;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+  color: #1e3f54;
 }
 
 .navbar-header{
@@ -159,7 +171,40 @@ a:hover{
   background-position: center;
   background-image: url("img/cv_pic.jpg");
 }
-
+.badge{
+  background-color: #4287B2;
+  margin-right: 5px;
+}
+.badge-container{
+  margin-bottom: 15px;
+}
+.centered-panel{
+  text-align:center;
+  margin-bottom: 15px;
+}
+.large-fa{
+  font-size: 50px;
+  color:#4287B2;
+}
+.lg-bar{
+  width:100%;
+  height: 200px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  color: white;
+}
+.lg-bar img{
+  width:100%;
+  height: 200px;
+}
+.bg-img{
+  background-size: cover;
+  width: 100%;
+  height: 300px;
+}
+.body-container{
+  margin-top : 100px;
+}
 /* =============== Base style ======================*/
 .no-gutter {
   padding: 0;
