@@ -75,6 +75,8 @@ a:hover{
 .parallax {
     background-image: url("img/blur_background.jpg");
     background-repeat: no-repeat;
+    background-size:cover;
+    background-position:center;
     position: fixed;
     width: 100%;
     height: 100%;
