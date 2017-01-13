@@ -31,28 +31,6 @@
     "title": "Curriculum-Vitae",
     "subtitle": "Développeuse logiciel, mobile et Web.",
     "download": "Téléchargez mon CV au format PDF",
-    "info": {
-      "title": "Informations personnelles",
-      "birthdate": {
-        "key": "Date de naissance",
-        "value": "07/01/1994"
-      },
-      "mail": {
-        "key": "E-mail",
-        "value": "contact.mripon@gmail.com"
-      },
-      "address": [
-          {
-            "key": "Adresse au Québec",
-            "value": "Chicoutimi, QC G7H 2V2, Canada"
-          },
-          {
-            "key": "Adresse en France",
-            "value": "Lille, 59 000"
-          }
-        ]
-
-    },
     "pro": {
       "title": "Expérience professionnelle",
       "for" : "pour",
@@ -304,7 +282,7 @@
     "object": "Objet",
     "content": "Contenu",
     "send": "Envoyer",
-    "info": "Vous pouvez me contacter via LinkedIn, mail ou simplement à l'aide du formulaire ci-dessous.",
+    "info": "Vous pouvez prendre contact à l'aide du formulaire ci-dessous, via LinkedIn ou encore au mail contact.mripon@gmail.com.",
     "success" : "Votre message a bien été envoyé.",
     "error": "Il y a eu une erreur lors de l'envoi du message. Le service n'est peut-être pas disponible dans votre région."
   }

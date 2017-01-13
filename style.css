@@ -35,8 +35,9 @@ a:hover{
 }
 
 .panel-subheading{
-  background-color: rgba(0,0,0,0.5);
-  color: white;
+  /*background-color: rgba(0,0,0,0.5);
+  color: white;*/
+  border-top: 1px solid rgba(0,0,0,0.5);
   margin-bottom: 15px;
 }
 
@@ -110,22 +111,13 @@ a:hover{
   color: white;
   font-weight: lighter;
 }
-.footer {
-  clear:both;
-  height: 25px;
-  color: white;
-  background-color: #262626;
-  text-align: center;
-  font-size : 1em;
-}
-
-.large-container{
-  margin: 0;
-  width: 100%;
-}
 
 .container{
   padding: 0;
+}
+.large-container{
+  margin: 0;
+  width: 100%;
 }
 
 .panel-default{
@@ -137,14 +129,33 @@ a:hover{
   height: 150px;
   width: 100%;
   text-align: center;
-  display: flex; /* contexte sur le parent */
-  flex-direction: column; /* direction d'affichage verticale */
-  justify-content: center;
 }
 
 .hidden-mobile {
   float:right;
   margin-left: 5px;
+}
+
+.container .jumbotron {
+  border-radius: 0px;
+}
+
+.jumbotron-custom{
+  margin-top: 130px;
+  border-radius: 0px;
+}
+
+.jumbotron p{
+  font-size: 30px;
+  text-align: center;
+}
+
+.jumbotron{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.text-info{
+  color: #4287B2;
 }
 /*
 @media screen and (max-width: 768px) {
