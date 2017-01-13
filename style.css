@@ -121,8 +121,11 @@ a:hover{
 
 .large-container{
   margin: 0;
-  padding: 0;
   width: 100%;
+}
+
+.container{
+  padding: 0;
 }
 
 .panel-default{
@@ -143,7 +146,7 @@ a:hover{
   float:right;
   margin-left: 5px;
 }
-
+/*
 @media screen and (max-width: 768px) {
   .hidden-mobile {
     display:none;
@@ -155,6 +158,7 @@ a:hover{
     margin-left: 200px;
   }
 }
+*/
 .pic-rounded{
   width: 150px;
   height: 150px;
