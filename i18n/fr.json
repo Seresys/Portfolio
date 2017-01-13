@@ -13,11 +13,11 @@
     },
     "projects": {
       "label": "Réalisations",
-      "icon": "fa fa-gears"
+      "icon": "fa fa-spinner"
     },
     "contact": {
       "label": "Contact",
-      "icon": "fa fa-comment"
+      "icon": "fa fa-envelope"
     },
     "linkedin": "https://www.linkedin.com/in/marineripon",
     "github": "https://github.com/Seresys"
@@ -197,6 +197,16 @@
     "list":
     [
       {
+        "icon": "fa fa-sun-o",
+        "title": "Eclipse",
+        "subtitle": "Jeu de puzzle-plateforme en 2D exploitant la dualité du personnage principal et de son ombre.",
+        "link": "#eclipse",
+        "picture": "eclipse-1.png",
+        "tags": ["C#", "Unity"],
+        "period": "Octobre - Décembre 2016",
+        "order": 9
+      },
+      {
         "icon": "fa fa-magnet",
         "title": "Lambda Engine",
         "subtitle": "Lambda Engine est un moteur de jeu 2D gérant les collisions entre des points, cercles, AABB, OBB et K-DOP.",
@@ -215,16 +225,6 @@
         "tags": ["C++", "IA"],
         "period": "Décembre 2016",
         "order": 10
-      },
-      {
-        "icon": "fa fa-sun-o",
-        "title": "Eclipse",
-        "subtitle": "Jeu de puzzle-plateforme en 2D exploitant la dualité du personnage principal et de son ombre.",
-        "link": "#eclipse",
-        "picture": "eclipse-1.png",
-        "tags": ["C#", "unity"],
-        "period": "Octobre - Décembre 2016",
-        "order": 9
       },
       {
         "icon": "fa fa-chrome",

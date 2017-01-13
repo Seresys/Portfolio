@@ -65,15 +65,11 @@
       <div class="row typo-font panel-subheading">
         <h4 class="col-md-12">{{ data.resume.skills.language }}</h4>
       </div>
-      <div class="centered-panel">
-        <div class="row">
-          <div ng-repeat="language in data.resume.skills.languages">
-            <h4 class="col-md-4">{{ language.name }}</h4>
-          </div>
-        </div>
-        <div class="row">
-          <div ng-repeat="language in data.resume.skills.languages">
-            <div class="col-md-4"><span ng-repeat="star in GetNumber(language.rating) track by $index">{{star}}<i class="fa fa-star"></i></span></div>
+      <div class="row centered-panel">
+        <div ng-repeat="language in data.resume.skills.languages">
+          <div class="col-md-4">
+            <h4 class="row">{{ language.name }}</h4>
+            <div class="row"><span ng-repeat="star in GetNumber(language.rating) track by $index">{{star}}<i class="fa fa-star"></i></span></div>
           </div>
         </div>
       </div>
