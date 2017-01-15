@@ -11,13 +11,21 @@ h1{
   font-size: 5em;
 }
 
-a, a:visited{
+a, a:visited, a:focus, a:active{
   color: #4287B2;
 }
 
 a:hover{
   color: #1e3f54;
   text-decoration: none;
+}
+
+.btn-custom{
+  background-color: #4287B2;
+}
+
+.btn-custom:hover{
+  background-color: #1e3f54;
 }
 
 .typo-font{
@@ -50,6 +58,7 @@ a:hover{
 .panel-body{
   margin-left: 50px;
   padding-top:0;
+  padding-bottom: 40px;
 }
 
 .fa-ring {

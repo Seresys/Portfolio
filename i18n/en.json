@@ -1,0 +1,286 @@
+{
+  "menu": {
+    "brand": {
+      "label": "Marine Ripon"
+    },
+    "home": {
+      "label": "Home",
+      "icon": "fa fa-home"
+    },
+    "resume": {
+      "label": "Resume",
+      "icon": "fa fa-user"
+    },
+    "projects": {
+      "label": "Projects",
+      "icon": "fa fa-spinner"
+    },
+    "contact": {
+      "label": "Contact",
+      "icon": "fa fa-envelope"
+    },
+    "linkedin": "https://www.linkedin.com/in/marineripon"
+  },
+  "home": {
+    "title": "I am Marine Ripon. I am a software, Web and mobile developer.",
+    "subtitle": "Fond of new technologies, I am finishing my master 2 both in software and game development.",
+    "line1": "You will find here informations about my career and my latest achievments."
+  },
+  "resume": {
+    "title": "Resume",
+    "subtitle": "Sofware, mobile and Web developer.",
+    "download": "Download my resume.",
+    "pro": {
+      "title": "Professional experience.",
+      "for" : "for",
+      "works": [
+        {
+          "brand": "KAPIA",
+          "label": "Kapia Solutions",
+          "role" : "Web developer",
+          "localisation": "Lille, Nord, France",
+          "period": "May-July 2016",
+          "missions": [
+            "• Development of an AngularJS application communicating with an Oracle databse through a Java Webservice.",
+            "• Managment of a Git workflow.",
+            "• Update a NodeJs tool using Gulp in order to automate deployments.",
+            "• Realisation of PHP unitary tests.",
+            "• Use of the Scrum method."
+          ]
+        }
+      ]
+    },
+    "education": {
+      "title": "Scholarship",
+      "schools" : [
+      {
+        "brand": "UQAC",
+        "label": "Université du Québec à Chicoutimi",
+        "logo": "uqac-logo.png",
+        "localisation": "Chicoutimi, Québec, Canada",
+        "period": "2016 - 2017",
+        "description": "Double diploma - Master 2 in IT, focused on videogames"
+      },
+      {
+        "brand": "ISEN",
+        "label": "Institut Supérieur de l'Électronique et du Numérique",
+        "localisation": "Lille, Nord, France",
+        "logo": "isen-logo.png",
+        "period": "2015 - 2017",
+        "description": "Double diploma - Engineer diploma in software development and Big Data, manager profile"
+      },
+      {
+        "brand": "ISEN",
+        "label": "Institut Supérieur de l'Électronique et du Numérique",
+        "localisation": "Lille, Nord, France",
+        "logo": "isen-logo.png",
+        "period": "2011 - 2015",
+        "description": "Bachelor of Technology - Three years in mathematics, physics and IT"
+      },
+      {
+        "label": "Lycée Madame de Sévigné",
+        "localisation": "Charleville-Mézières, Ardennes, France",
+        "period": "2008 - 2011",
+        "description": "High School diploma in sciences"
+      }
+     ]
+    },
+    "skills": {
+      "title": "Skills",
+      "language": "Languages",
+      "technology": "IT",
+      "languages": [
+        {
+          "name": "French",
+          "rating": 5
+        },
+        {
+          "name": "English",
+          "rating": 4
+        },
+        {
+          "name": "Spanish",
+          "rating": 2
+        }
+      ],
+      "technologies": [
+        {
+          "category": "Software",
+          "list": ["C", "C++", "C#", "Java"]
+        },
+        {
+          "category": "Scripting",
+          "list": ["Python", "Bash"]
+        },
+        {
+          "category": "Web",
+          "list": ["HTML", "CSS", "LESS", "SASS", "Javascript", "jQuery", "NodeJS", "ExpressJS", "AngularJS"]
+        },
+        {
+          "category": "Artificial intelligence",
+          "list": ["Steering behaviors", "Fuzzy logic", "Path finding algorithms"]
+        },
+        {
+          "category": "Databases",
+          "list": ["PostgreSQL", "MongoDB"]
+        },
+        {
+          "category": "VCS",
+          "list": ["Git", "SVN"]
+        },
+        {
+          "category": "IDE",
+          "list": ["Netbeans", "VisualStudio", "AndroidStudio", "Eclipse", "Atom", "Webstorm"]
+        },
+        {
+          "category": "Game Engines",
+          "list": ["UnityEngine", "UnrealEngine"]
+        },
+        {
+          "category": "Project Managment",
+          "list": ["Risk evalution", "Resource managment", "Agile"]
+        },
+        {
+          "category": "Others",
+          "list": ["Linux", "Adobe suite", "Office pack", "OpenGL"]
+        }
+      ]
+    },
+    "achievements": {
+      "title": "Last achievements"
+    },
+    "hobbies": {
+      "title": "Hobbies",
+      "list": [
+        {
+          "name": "Painting",
+          "picture": "fa-paint-brush"
+        },
+        {
+          "name": "History",
+          "picture": "fa-university"
+        },
+        {
+          "name": "Videogames",
+          "picture": "fa-gamepad"
+        }
+      ]
+    }
+  },
+  "projects" : {
+    "title": "Last achievements",
+    "list":
+    [
+      {
+        "icon": "fa fa-cube",
+        "title": "Lambda Engine",
+        "subtitle": "Lambda Engine is a simple javascript engine managing collisions between points, circles, AABB, OBB and K-DOP.",
+        "link": "#lambda-engine",
+        "picture": "lambda-engine-1.PNG",
+        "tags": ["HTML", "CSS", "Javascript"],
+        "period": "October 2016",
+        "order": 8
+      },
+      {
+        "icon": "fa fa-sun-o",
+        "title": "Eclipse",
+        "subtitle": "Puzzle platformer 2D game manipulating shadows and lights.",
+        "link": "#eclipse",
+        "picture": "eclipse-1.png",
+        "tags": ["C#", "Unity"],
+        "period": "October - December 2016",
+        "order": 9
+      },
+      {
+        "icon": "fa fa-chrome",
+        "title": "JChrome",
+        "subtitle": "Java implementation of a WebBrowser using Rhino and JSoup. Displaying HTML, pictures and clickable links.",
+        "link": "#jchrome",
+        "picture": "jchrome-logo.jpg",
+        "tags": ["Java"],
+        "period": "March - June 2015",
+        "order": 2
+      },
+      {
+        "icon": "fa fa-home",
+        "title": "The Village",
+        "subtitle": "An alternative to the Mafia game implmented for Android 5.0+ devices. Connected to a MongoDB database through a REST WebService. Online chat with Socket.IO.",
+        "link": "#the-village",
+        "picture": "the-village-1.jpg",
+        "tags": ["Java", "Android", "NodeJS", "ExpressJS", "MongoDB"],
+        "period": "May - December 2016",
+        "order": 7
+      },
+      {
+        "icon": "fa fa-headphones",
+        "title": "Regaplay",
+        "subtitle": "A music library for Android 5.0+.",
+        "link": "#pez-audio-player",
+        "picture": "pez-audio-player-pub.jpg",
+        "tags": ["Java", "Android"],
+        "period": "October - November 2015",
+        "order": 4
+      },
+      {
+        "icon": "fa fa-film",
+        "title": "Constellation Series",
+        "subtitle": "An AngularJS application using the domotic framework Constellation and the TMDb API. Notifies the user about new episodes of his followed series.",
+        "link": "#constellation-series",
+        "picture": "constellation-series-1.PNG",
+        "tags": ["C#", "Javascript", "AngularJS"],
+        "period": "March 2016",
+        "order": 5
+      },
+      {
+        "icon": "fa fa-map",
+        "title": "TSP Solver",
+        "subtitle": "A javascript application using Google API. It communicates through a Websocket with a C++ backend running a Little's algorithm.",
+        "link": "#tsp-solver",
+        "picture": "tsp-solver-2.jpg",
+        "tags": ["C++", "Javascript"],
+        "period": "February - June 2014",
+        "order": 1
+      },
+      {
+        "icon": "fa fa-users",
+        "title": "Hire",
+        "subtitle": "MEAN (MongoDB, Express, AngularJS, NodeJS) application designed to help the human relation team of a company.",
+        "link": "#hire",
+        "picture": "hire-1.PNG",
+        "tags": ["MongoDB", "ExpressJS", "AngularJS", "NodeJS"],
+        "period": "April 2016",
+        "order": 6
+      },
+      {
+        "icon": "fa fa-university",
+        "title": "Dynasty",
+        "subtitle": "A C# RTS game created for history educative purpose.",
+        "link": "#dynasty",
+        "picture": "dynasty-1.png",
+        "tags": ["C#", "IA"],
+        "period": "July 2015",
+        "order": 3
+      },
+      {
+        "icon": "fa fa-bullseye",
+        "title": "Raven",
+        "subtitle": "Development of the AI of a bot team in a C++ shooter game.",
+        "link": "#raven",
+        "picture": "raven.png",
+        "tags": ["C++", "IA"],
+        "period": "Décembre 2016",
+        "order": 10
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact",
+    "subtitle": "Any questions ? Feel free to contact me.",
+    "object": "Subject",
+    "content": "Content",
+    "send": "Send",
+    "info": "You can contact me using the form below, through LinkedIn or by e-mail at contact.mripon@gmail.com.",
+    "success" : "Your message has been sent.",
+    "error": "An error has occured. The service may be not available in your country."
+  }
+}

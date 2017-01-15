@@ -19,8 +19,7 @@
       "label": "Contact",
       "icon": "fa fa-envelope"
     },
-    "linkedin": "https://www.linkedin.com/in/marineripon",
-    "github": "https://github.com/Seresys"
+    "linkedin": "https://www.linkedin.com/in/marineripon"
   },
   "home": {
     "title": "Je m'appelle Marine Ripon. Je suis développeuse logiciel, Web et mobile.",
@@ -45,7 +44,8 @@
             "• Développement d’une application AngularJS communiquant avec une base de données Oracle via un WebService Java.",
             "• Gestion d’un flux de travail Git.",
             "• Maintenance d’un outil NodeJS utilisant Gulp afin d’automatiser les déploiements.",
-            "• Réalisation de tests en PHP."
+            "• Réalisation de tests en PHP.",
+            "• Suivi de l'avancement via la méthode Scrum."
           ]
         }
       ]
@@ -134,7 +134,7 @@
         },
         {
           "category": "Moteurs de jeu",
-          "list": ["UnityEngine"]
+          "list": ["UnityEngine", "UnrealEngine"]
         },
         {
           "category": "Gestion de projet",
@@ -175,6 +175,16 @@
     "list":
     [
       {
+        "icon": "fa fa-cube",
+        "title": "Lambda Engine",
+        "subtitle": "Lambda Engine est un moteur de jeu 2D gérant les collisions entre des points, cercles, AABB, OBB et K-DOP.",
+        "link": "#lambda-engine",
+        "picture": "lambda-engine-1.PNG",
+        "tags": ["HTML", "CSS", "Javascript"],
+        "period": "Octobre 2016",
+        "order": 8
+      },
+      {
         "icon": "fa fa-sun-o",
         "title": "Eclipse",
         "subtitle": "Jeu de puzzle-plateforme en 2D exploitant la dualité du personnage principal et de son ombre.",
@@ -185,33 +195,13 @@
         "order": 9
       },
       {
-        "icon": "fa fa-magnet",
-        "title": "Lambda Engine",
-        "subtitle": "Lambda Engine est un moteur de jeu 2D gérant les collisions entre des points, cercles, AABB, OBB et K-DOP.",
-        "link": "#lambda-engine",
-        "picture": "lambda-engine-1.PNG",
-        "tags": ["HTML", "CSS", "Javascript"],
-        "period": "Octobre 2016",
-        "order": 8
-      },
-      {
-        "icon": "fa fa-magnet",
-        "title": "Raven",
-        "subtitle": "Développement de l'intelligence artificielle d'une équipe de bots dans le contexte d'un jeu de tir en C++.",
-        "link": "#raven",
-        "picture": "lambda-engine-1.PNG",
-        "tags": ["C++", "IA"],
-        "period": "Décembre 2016",
-        "order": 10
-      },
-      {
         "icon": "fa fa-chrome",
         "title": "JChrome",
         "subtitle": "Navigateur Web développé en Java capable d’afficher des pages en HTML, des images et des liens cliquables. Interprète également les balises basiques. Utilise Rhino et JSoup.",
         "link": "#jchrome",
         "picture": "jchrome-logo.jpg",
         "tags": ["Java"],
-        "period": "Mars - Juin 2014",
+        "period": "Mars - Juin 2015",
         "order": 2
       },
       {
@@ -225,7 +215,7 @@
         "order": 7
       },
       {
-        "icon": "fa fa-music",
+        "icon": "fa fa-headphones",
         "title": "Regaplay",
         "subtitle": "Application de bibliothèque musicale développée pour Android 5.0+.",
         "link": "#pez-audio-player",
@@ -239,7 +229,7 @@
         "title": "Constellation Series",
         "subtitle": "Application AngularJS utilisant la plateforme domotique Constellation et l'API TMDb (The Movie Database) permettant le suivi de séries. L'appareil mobile de l'utilisateur est notifié lors de la parution d'un nouvel épisode.",
         "link": "#constellation-series",
-        "picture": "constellation-series-2.PNG",
+        "picture": "constellation-series-1.PNG",
         "tags": ["C#", "Javascript", "AngularJS"],
         "period": "Mars 2016",
         "order": 5
@@ -251,7 +241,7 @@
         "link": "#tsp-solver",
         "picture": "tsp-solver-2.jpg",
         "tags": ["C++", "Javascript"],
-        "period": "Février - Juin 2013",
+        "period": "Février - Juin 2014",
         "order": 1
       },
       {
@@ -273,6 +263,16 @@
         "tags": ["C#", "IA"],
         "period": "Juillet 2015",
         "order": 3
+      },
+      {
+        "icon": "fa fa-bullseye",
+        "title": "Raven",
+        "subtitle": "Développement de l'intelligence artificielle d'une équipe de bots dans le contexte d'un jeu de tir en C++.",
+        "link": "#raven",
+        "picture": "raven.png",
+        "tags": ["C++", "IA"],
+        "period": "Décembre 2016",
+        "order": 10
       }
     ]
   },
