@@ -15,6 +15,10 @@ a, a:visited, a:focus, a:active{
   color: #4287B2;
 }
 
+.text-success {
+  color: #4287B2;
+}
+
 a:hover{
   color: #1e3f54;
   text-decoration: none;
